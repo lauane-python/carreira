@@ -5,29 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lauane | Front-end Engineer</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-
 <body>
-
     <div class="bg-blur blur1"></div>
     <div class="bg-blur blur2"></div>
-
     <header>
         <div class="logo">
             <span>&lt;/&gt;</span>
         </div>
-
         <nav>
             <a href="#home">Início</a>
             <a href="#sobre">Sobre</a>
@@ -35,44 +25,138 @@
             <a href="#futuro">Futuro</a>
             <a href="#contato">Contato</a>
         </nav>
-
         <a href="#contato" class="btn-nav">Vamos conversar</a>
     </header>
-
     <main>
-
+        <!-- HERO -->
         <section class="hero" id="home">
-
             <div class="hero-text">
-
                 <span class="tag">OLÁ, EU SOU</span>
-
-                <h1>
-                    Desenvolvedora
-                    <span>Front-end</span>
-                </h1>
-
+                <h1>Desenvolvedora<span>Front-end</span></h1>
                 <p>
-                    Estudante de Desenvolvimento de Sistemas no SENAI e futura cientista da computação focada em
-                    Engenharia Front-end.
+                    Estudante de Desenvolvimento de Sistemas no SENAI e futura cientista da computação focada em Engenharia Front-end.
                     Apaixonada por criar experiências digitais modernas, intuitivas e impactantes.
                 </p>
-
                 <div class="hero-buttons">
                     <a href="#sobre" class="primary-btn">Sobre mim</a>
                     <a href="#skills" class="secondary-btn">Minhas skills</a>
                 </div>
-
                 <div class="mini-cards">
-
                     <div class="card-mini">
                         <h3>Foco</h3>
                         <p>Interfaces modernas e experiências interativas</p>
                     </div>
-
                     <div class="card-mini">
                         <h3>Objetivo</h3>
                         <p>Ciência da Computação + Especialização Front-end</p>
                     </div>
-
+                </div>
+            </div>
+            <!-- SUA FOTO -->
+            <div class="hero-image"><img src="img/sua-foto.png" alt="Lauane"></div>
+        </section>
+        <!-- SOBRE -->
+        <section id="sobre">
+            <div class="section-title">
+                <span>SOBRE MIM</span>
+                <h2>Criando experiências digitais modernas através da Engenharia Front-end</h2>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-card glass">
+                    <h3>Minha trajetória</h3>
+                    <p>
+                        Atualmente curso Desenvolvimento de Sistemas no SENAI e pretendo seguir para Ciência da Computação,
+                        me especializando profundamente em Front-end Engineering.
+                    </p>
+                    <p>
+                        Meu objetivo é desenvolver interfaces modernas, intuitivas e altamente impactantes,
+                        unindo criatividade, tecnologia e experiência do usuário.
+                    </p>
+                </div>
+                <div class="sobre-grid">
+                    <div class="info-box glass">
+                        <h3>Criatividade</h3>
+                        <p>Transformando ideias em experiências visuais.</p>
+                    </div>
+                    <div class="info-box glass">
+                        <h3>UI/UX</h3>
+                        <p>Interfaces modernas e intuitivas.</p>
+                    </div>
+                    <div class="info-box glass">
+                        <h3>Performance</h3>
+                        <p>Sites rápidos, leves e responsivos.</p>
+                    </div>
+                    <div class="info-box glass">
+                        <h3>Futuro</h3>
+                        <p>Especialização profunda em Front-end.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SKILLS -->
+        <section id="skills">
+            <div class="section-title center">
+                <span>SKILLS</span>
+                <h2>Tecnologias que fazem parte da minha jornada</h2>
+            </div>
+            <div class="future-tech">
+                <div class="tech"><img src="img/html.svg" alt="HTML"></div>
+                <div class="tech"><img src="img/css.svg" alt="CSS"></div>
+                <div class="tech"><img src="img/js.svg" alt="JavaScript"></div>
+                <div class="tech"><img src="img/react.svg" alt="React"></div>
+                <div class="tech"><img src="img/git.svg" alt="Git"></div>
+                <div class="tech"><img src="img/figma.svg" alt="Figma"></div>
+            </div>
+        </section>
+        <!-- FUTURO -->
+        <section id="futuro">
+            <div class="future-box glass">
+                <div class="future-text">
+                    <span>FUTURO</span>
+                    <h2>
+                        Minha visão para o futuro na tecnologia
+                    </h2>
+                    <p>
+                        Desejo atuar profissionalmente com Engenharia Front-end,
+                        criando produtos digitais modernos, acessíveis e inovadores.
+                        Também tenho grande interesse em Inteligência Artificial,
+                        Realidade Virtual e experiências imersivas.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- CONTATO -->
+        <section id="contato">
+            <div class="contact-card glass">
+                <h2>
+                    Vamos criar algo incrível?
+                </h2>
+                <p>
+                    Estou construindo minha jornada na tecnologia e buscando evoluir cada vez mais
+                    como desenvolvedora Front-end.
+                </p>
+                <a href="#" class="primary-btn">
+                    Entrar em contato
+                </a>
+            </div>
+        </section>
+    </main>
+    <script>
+        ScrollReveal().reveal('.hero-text', {
+            distance: '60px',
+            duration: 1500,
+            origin: 'left'
+        });
+        ScrollReveal().reveal('.hero-image', {
+            distance: '60px',
+            duration: 1500,
+            origin: 'right'
+        });
+        ScrollReveal().reveal('.glass', {
+            distance: '40px',
+            duration: 1200,
+            interval: 200
+        });
+    </script>
+</body>
 </html>
